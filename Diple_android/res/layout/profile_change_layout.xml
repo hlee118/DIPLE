@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="20dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/main_color"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="30dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <Button
+                android:id="@+id/btnRotation"
+                android:layout_width="59dp"
+                android:layout_height="52dp"
+                android:background="@drawable/lotation"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="183dp"
+            android:layout_height="181dp"
+            android:layout_marginBottom="30dp" >
+
+            <ImageView
+                android:id="@+id/imgEditMyProfile"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:scaleType="fitXY"
+                android:src="@drawable/profilechange_diple"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/imgRoundCircle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/profilechange_roundcircleframe"
+                android:visibility="visible" />
+
+        </FrameLayout>
+
+        <EditText
+            android:id="@+id/editMyNickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/profilechange_edittext"
+            android:ems="10"
+            android:hint="커플이름"
+            android:paddingLeft="10dp"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/editAnniversaryName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/profilechange_edittext"
+            android:ems="10"
+            android:hint="기념일 이름"
+            android:paddingLeft="10dp"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/editAnniversaryDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/profilechange_edittext"
+            android:ems="10"
+            android:hint="기념일(ex:2013.7.27)"
+            android:inputType="date"
+            android:paddingLeft="10dp"
+            android:singleLine="true" />
+
+        <Button
+            android:id="@+id/btnChangeMyProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/profilechange_btncomplete" />
+    </LinearLayout>
+
+</LinearLayout>

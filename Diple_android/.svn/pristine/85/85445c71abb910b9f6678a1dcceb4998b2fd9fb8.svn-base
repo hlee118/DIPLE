@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="loginMainpageBackground">#80888888</color>
+    <color name="orange">#ffffdc7e</color>
+    <color name="grey">#B5B9DB</color>
+    <color name="green">#ff8dd304</color>
+    <color name="blue">#ff82e0ff</color>
+    <color name="yellow">#fffffbae</color>
+    <color name="red">#fff10800</color>
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="main_color">#10af90</color>
+    <color name="list_item_pressed">#1A000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="zzim_list_dark">#bbc0c4</color>
+    <color name="zzim_list_bright">#edeff0</color>
+    <color name="dark_grey">#444444</color>
+    <color name="recorded_theme_food">#bb94d8fd</color>
+    <color name="recorded_theme_movie">#bbff52f1</color>
+    <color name="recorded_theme_shopping">#bb455cff</color>
+    <color name="recorded_theme_pup">#bbfe4d4d</color>
+    <color name="recorded_theme_outsider">#bb34de60</color>
+    <color name="recorded_theme_art">#bbfec92b</color>
+    <color name="recorded_theme_cafe">#bbf58a2c</color>
+    <color name="zzim_list_fontcolor_title">#596263</color>
+    <color name="zzim_list_fontcolor_subtitle">#7f8c8d</color>
+</resources>

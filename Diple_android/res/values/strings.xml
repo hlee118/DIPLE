@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Diple</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="search_menu">SearchStation</string>
+    <string name="marker_menu">MakerContant</string>
+    <string name="marker_complited_zzim">찜이 완료 되었습니다</string>
+    <string name="facebook_app_id">654219581317741</string>
+    <string name="choosethebest_title">우리의 찜</string>
+    <string name="sliding_profile_change">프로필 사진 및 닉네임 변경</string>
+    <string name="btnSend">Send</string>
+    <string name="recorded_title">우리의 기록</string>
+    <string name="shortestroute_location_notfound">현재 위치를 못찾았습니다. 다시 시도해주세요.</string>
+    <string name="nullstring"> </string>
+    <string name="recorded_detail_moreinfo_opened">가리기</string>
+    <string name="recorded_detail_moreinfo_closed">더 보기</string>
+	<string name="kakao_app_key">cd4b462e814cf9ad1571879ce4d36a5e</string>
+    <string name="kakao_scheme">kakaocd4b462e814cf9ad1571879ce4d36a5e</string>
+    <string name="kakaolink_host">kakaolink</string>
+    
+</resources>

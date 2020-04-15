@@ -1,0 +1,19 @@
+{
+  "name": "application-name",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "3.4.8",
+    "ejs": "^1.0.0",
+    "easyimage": "^0.1.6",
+    "fb": "^0.7.0",
+    "generic-pool": "^2.0.4",
+    "mysql": "^2.2.0",
+    "date-utils": "^1.2.15",
+    "node-gcm": "^0.9.11",
+    "async": "^0.9.0"
+  }
+}

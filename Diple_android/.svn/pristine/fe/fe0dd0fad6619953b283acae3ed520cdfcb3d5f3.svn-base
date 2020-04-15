@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/checkin_background"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/demyImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/checkin_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/editPlaceName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/comment_bar"
+            android:ems="10"
+            android:hint="장소 이름을 입력해주세요."
+            android:maxLength="150"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="5dp"
+            android:paddingTop="10dp"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/editComentText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/comment_bar"
+            android:hint="150자 까지 입력 가능 합니다."
+            android:maxLength="150"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="5dp"
+            android:paddingTop="10dp" >
+
+            <requestFocus />
+        </EditText>
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/line" />
+
+        <GridView
+            android:id="@+id/gridimageSelecter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:numColumns="4" >
+        </GridView>
+
+        <ImageView
+            android:id="@+id/ImageView02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tema_background"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:gravity="center" >
+
+                <ToggleButton
+                    android:id="@+id/btnCheckInFood"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/checkinpage_selector_food"
+                    android:textOff="@string/nullstring"
+                    android:textOn="@string/nullstring" />
+
+                <ToggleButton
+                    android:id="@+id/btnCheckInMovie"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/checkinpage_selector_movie"
+                    android:text="ToggleButton"
+                    android:textOff="@string/nullstring"
+                    android:textOn="@string/nullstring" />
+
+                <ToggleButton
+                    android:id="@+id/btnCheckInCafe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/checkinpage_selector_cafe"
+                    android:text="ToggleButton"
+                    android:textOff="@string/nullstring"
+                    android:textOn="@string/nullstring" />
+
+                <ToggleButton
+                    android:id="@+id/btnCheckInPup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/checkinpage_selector_pup"
+                    android:text="ToggleButton"
+                    android:textOff="@string/nullstring"
+                    android:textOn="@string/nullstring" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:gravity="center" >
+
+                <ToggleButton
+                    android:id="@+id/btnCheckInArt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/checkinpage_selector_art"
+                    android:text="ToggleButton"
+                    android:textOff="@string/nullstring"
+                    android:textOn="@string/nullstring" />
+
+                <ToggleButton
+                    android:id="@+id/btnCheckInShopping"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/checkinpage_selector_shopping"
+                    android:text="ToggleButton"
+                    android:textOff="@string/nullstring"
+                    android:textOn="@string/nullstring" />
+
+                <ToggleButton
+                    android:id="@+id/btnCheckInOutsider"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/checkinpage_selector_outsider"
+                    android:text="ToggleButton"
+                    android:textOff="@string/nullstring"
+                    android:textOn="@string/nullstring" />
+
+                <ToggleButton
+                    android:id="@+id/btnCheckInDiscount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/checkinpage_selector_discount"
+                    android:text="ToggleButton"
+                    android:textOff="@string/nullstring"
+                    android:textOn="@string/nullstring" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/ImageView01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/line" />
+
+        <Button
+            android:id="@+id/btnComplete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/complete_btn" />
+    </LinearLayout>
+
+</LinearLayout>

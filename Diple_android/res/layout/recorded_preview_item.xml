@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/thumnail_box"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/recordedDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="Empty!!"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/main_color" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/thumnail_box_middleline" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:gravity="center"
+        android:paddingBottom="2dp"
+        android:paddingLeft="1dp"
+        android:paddingRight="1dp"
+        android:scrollbarAlwaysDrawVerticalTrack="false"
+        android:scrollbars="none" >
+
+        <FrameLayout
+            android:id="@+id/imgPhotoFrameLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.98" >
+
+            <ImageView
+                android:id="@+id/imagePhoto1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_margin="2dp"
+                android:src="@drawable/bin_camera" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/imgPhotoFrameLayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.98" >
+
+            <ImageView
+                android:id="@+id/imagePhoto2"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_margin="2dp"
+                android:src="@drawable/bin_camera" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/imgPhotoFrameLayout3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1.00" >
+
+            <ImageView
+                android:id="@+id/imagePhoto3"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_margin="2dp"
+                android:src="@drawable/bin_camera" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

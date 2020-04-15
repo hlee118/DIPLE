@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/signupemail_background"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:padding="30dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal" >
+
+        <EditText
+            android:id="@+id/editMyPhon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/sendingphonenum_edittext"
+            android:ems="10"
+            android:hint="내 번호"
+            android:inputType="phone"
+            android:paddingLeft="10dp" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/sendingphonenum_findcontact"
+            android:visibility="invisible" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:gravity="center_horizontal" >
+
+        <EditText
+            android:id="@+id/contactText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/sendingphonenum_edittext"
+            android:ems="10"
+            android:hint="연인의 번호"
+            android:inputType="phone"
+            android:paddingLeft="10dp" >
+
+            <requestFocus />
+        </EditText>
+
+        <Button
+            android:id="@+id/btnContacts"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/sendingphonenum_findcontact"
+            android:minHeight="1dp"
+            android:minWidth="1dp" />
+
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/checkBoxServiceAgree"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:button="@null"
+        android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+        android:text="서비스 이용약관 동의"
+        android:textColor="@color/main_color" />
+
+    <CheckBox
+        android:id="@+id/checkBoxPersonalInfoAgree"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:button="@null"
+        android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+        android:text="개인정보 수집 및 이용 동의"
+        android:textColor="@color/main_color" />
+
+    <CheckBox
+        android:id="@+id/checkBoxLocationServiceAgree"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:button="@null"
+        android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+        android:text="위치기반 서비스 이용약관 동의"
+        android:textColor="@color/main_color" />
+
+    <Button
+        android:id="@+id/btnCompleteSignup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/sendingphonenum_signupcomplete"
+        android:minHeight="24dp"
+        android:minWidth="24dp" />
+
+</LinearLayout>

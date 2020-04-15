@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:app= "http://schemas.android.com/apk/res-auto"  >
+    
+    <item android:id="@+id/menuNext" 
+        android:orderInCategory="104" 
+     	android:icon="@android:drawable/ic_media_next"
+        app:showAsAction="ifRoom"
+        android:title="menuNext" />
+    
+    <item android:id="@+id/menuBefore" 
+        android:orderInCategory="105" 
+     	android:icon="@android:drawable/ic_media_pause"
+        app:showAsAction="ifRoom" 
+        android:title="menuBefore" />
+
+</menu>

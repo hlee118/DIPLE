@@ -1,0 +1,250 @@
+
+get - 100 (facebook login)
+
+이름 : facebook login api 
+설명 : facebook login정보를 이용하여 서버에 login처리하는 api
+method : POST
+url : /..../
+parameter : {
+	id String;  // facebook id
+	accessToken String; // facebook access token
+}
+request example : .../?id=xxx&accessToken=xxx 
+result : {
+	resultCode int; // (실패시 -1 성공시 나머지 인트값)
+        resultMessage String; // ....
+}
+example : 
+==> { 
+      "resultCode" : 1,
+      "resultMessage" : "errorMessage" 
+    }
+
+
+
+
+get - 101 (nomal login)
+parameter{
+	id String; (헤쉬값)
+	password int; (샤헤쉬 값)
+} 
+result{
+	loginOk int: (실패시 -1 성공시 나머지 인트값)
+}
+
+
+
+
+get - 102 (sing up)
+parameter{
+	id String;
+	password int; (샤헤쉬 값)
+	otherPhoneNumeber int; (샤 헤쉬값);
+}
+result{
+ 	상대방이 가입하면 푸쉬!
+ 	gPush;
+}
+
+
+
+
+get - 103 (When started,maker infomation of my location)
+parameter{
+	myLocationLat int;
+	myLocationLng int;
+	selectedCategory int;
+	zoomLevel float;
+}
+result{
+	makerList{
+		placeId int;
+		makerAdress String;
+		makerName String;
+		makerzoomLevel float;
+		lat int;
+		lng int;
+		category int;
+		categoryImageUrl String;
+		checkInNum int;
+	}
+	myNickName String;
+	myPhoto Url;
+}
+
+
+
+
+get - 104 (When changed location)
+parameter{
+	searchLocationLat int;
+	searchLocationLng int;
+	selectedCategory int;
+	zoomLevel float;
+}
+result{
+
+}
+
+
+
+
+get - 105 (markerDetailPage)
+parameter{
+	PlaceId String;
+}
+result{
+	placeId String;
+	thumbnailPhoto{
+		imageUrl Url; (default 갯수 20개 최신순으로)
+	}
+	rank String;
+	name String;
+	address String;
+	checkInNum String;
+	ourCheckInNum String;
+	StorePhoneNumber String;
+	isChecked String;
+	thumbnailCategory1; // 무조건 1은 채워져야한다
+	thumbnailCategory2; // 2 ,3 은 유저가 선택했을때
+	thumbnailCategory3;
+	reView{
+		image Url;
+		name String;
+		comment String;
+		likeNum String;
+	}
+}
+
+
+
+
+get - 106 (markerDetailPhotoMore)
+parameter{
+placeId int;
+}
+result{
+	placeId int;
+	thumbnailPhoto{
+		imageUrl String;
+	}
+}
+
+
+
+	
+get - 107 (CheckIn)
+parameter{
+	Id String;
+	myLocationLat String;
+	myLocationLng String;
+}
+result{
+	상대방도 체크인하고 넘겨주기 버튼 누르면 푸쉬!
+	gPush;
+}
+
+
+
+get - 108 (CheckInComent)
+parameter{
+	Id String;
+	coment String;
+	category String;
+	photo String....; // 여럿 보낼 수 있다. 
+}
+result{
+	resultCode String; // (실패시 -1 성공시 나머지 인트값)
+        resultMessage String; // ....
+}
+
+
+
+get - 109 (ReView)
+parameter{
+	userId String;
+	photoList{
+		photo byte[];
+	}
+	coment String;
+}
+result{
+	comentRegisterOk int;(실패시 -1 성공시 나머지 인트값)
+}
+
+
+
+
+
+
+Table user {
+	Index_ID int;
+	user_id String;
+	otherId String;
+	PASSWORD String;
+	otherPhoneNumeber String;
+	user_name String;
+	myPhoto Url;
+	myLocationLat String;
+	myLocationLng String;
+	Delete String;
+}
+
+Table markerList { //500m parameter
+	Index_ID int;(primaryKey)
+	makerAdress String;
+	makerName String;
+	makerzoomLevel float;
+	lat int;
+	lng int;
+	category int;
+	checkInNum int;
+}
+
+
+locationLog{
+	Index_ID 
+	placeId (ForeignKey)
+	userid
+        time
+}
+
+table
+
+
+Table locationDetail{
+	Index_ID String; 
+	placeId String; (ForeignKey)
+	thumbnailPhoto{
+		imageUrl Url;
+	}
+	rank String; //체크인 랭킹 기준
+	name String; 
+	address String;
+	checkInNum String; 
+	StorePhoneNumber String; 
+	CategoryId1;
+	CategoryId2;
+	CategoryId3;
+	accuseNum int; (신고수)
+}
+
+Teble vote{
+	indexid
+	userId
+	placeId (ForeignKey)
+	CategoryId1;
+}
+
+Table reView{
+	userphotoImage Url;
+	name String;
+	comment String;
+	likeNum String; 
+}
+
+Table delete{
+	indexid
+	userId
+	desc
+}

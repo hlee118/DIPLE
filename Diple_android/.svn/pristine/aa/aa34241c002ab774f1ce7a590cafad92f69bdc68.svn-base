@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/settingmain_bgtitle"
+        android:gravity="center_vertical"
+        android:paddingLeft="30dp"
+        android:text="옵션"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/dark_grey" />
+
+    <Button
+        android:id="@+id/button1"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/settingmain_bgitem"
+        android:gravity="center_vertical"
+        android:paddingLeft="30dp"
+        android:text="미리 알림" />
+
+    <Button
+        android:id="@+id/btnLockSetting"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/settingmain_bgitem"
+        android:gravity="center_vertical"
+        android:paddingLeft="30dp"
+        android:text="암호 잠금" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/settingmain_bgtitle"
+        android:gravity="center_vertical"
+        android:paddingLeft="30dp"
+        android:text="정보"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/dark_grey" />
+
+    <Button
+        android:id="@+id/Button02"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/settingmain_bgitem"
+        android:gravity="center_vertical"
+        android:paddingLeft="30dp"
+        android:text="저작권" />
+
+    <Button
+        android:id="@+id/Button03"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/settingmain_bgitem"
+        android:gravity="center_vertical"
+        android:paddingLeft="30dp"
+        android:text="이용자 약관" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/settingmain_bgtitle"
+        android:gravity="center_vertical"
+        android:paddingLeft="30dp"
+        android:text="계정"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/dark_grey" />
+
+    <Button
+        android:id="@+id/Button04"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/settingmain_bgitem"
+        android:gravity="center_vertical"
+        android:paddingLeft="30dp"
+        android:text="로그아웃" />
+
+    <Button
+        android:id="@+id/Button05"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/settingmain_bgitem"
+        android:gravity="center_vertical"
+        android:paddingLeft="30dp"
+        android:text="암호변경" />
+
+    <Button
+        android:id="@+id/Button06"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/settingmain_bgitem"
+        android:gravity="center_vertical"
+        android:paddingLeft="30dp"
+        android:text="계정 탈퇴" />
+
+</LinearLayout>
